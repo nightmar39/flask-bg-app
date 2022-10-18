@@ -18,6 +18,9 @@ def append_version(curr_version):
 def hello_world():
     return "<p>Hello, World!</p>"
 
+@app.route("/demo")
+def hello_world():
+    return "<h1>Hello, DEMO</h1>"
 
 @app.route("/version")
 def return_version():

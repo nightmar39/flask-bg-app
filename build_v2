@@ -2,7 +2,7 @@ FROM python:3.8-slim-buster
 
 ENV VERSION=AppV2
 
-COPY . /web 
+COPY . / 
 
 WORKDIR /web 
 
