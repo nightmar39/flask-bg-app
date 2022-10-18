@@ -20,7 +20,7 @@ def hello_world():
 
 @app.route("/demo")
 def hello_world():
-    return "<h1>Hello, DEMO cx8</h1>"
+    return "<h1>Hello, DEMO cx9</h1>"
 
 @app.route("/version")
 def return_version():
