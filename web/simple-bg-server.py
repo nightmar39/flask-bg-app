@@ -19,13 +19,9 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 @app.route("/demo")
-<<<<<<< HEAD
 def hello_demo():
     return "<h1>Hello, DEMO</h1>"
-=======
-def hello_world():
-    return "<h1>Hello, DEMO cx5</h1>"
->>>>>>> 20441777c0da1fee53b0d45f18dcec727928b5af
+
 
 @app.route("/version")
 def return_version():

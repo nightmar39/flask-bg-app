@@ -10,9 +10,6 @@ ENV FLASK_APP=simple-bg-server.py
 
 RUN pip3 install -r requirements.txt
 
-<<<<<<< HEAD
-=======
 ENV FLASK_APP=simple-bg-server.py
 
->>>>>>> 20441777c0da1fee53b0d45f18dcec727928b5af
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
