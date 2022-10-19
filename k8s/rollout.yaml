@@ -6,7 +6,7 @@ metadata:
 spec:
   replicas: 2
   strategy:
-    blueGreen: 
+    blueGreen:
       # activeService specifies the service to update with the new template hash at time of promotion.
       # This field is mandatory for the blueGreen update strategy.    
       activeService: rollout-bluegreen-active
@@ -28,9 +28,9 @@ spec:
         app: flask-bg-app
     spec:
       containers:
-      - name: flask-simple
-        image: docker.io/nightmar39/flask-bg-app:v1
-        ports:
-        - name: http
-          containerPort: 8000
-          protocol: TCP
+        - name: flask-simple
+          image: nightmar39/flask-bg-app:demo-version
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
