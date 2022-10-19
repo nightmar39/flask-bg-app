@@ -15,4 +15,8 @@ spec:
       - path: /
         backend:
           serviceName: rollout-bluegreen-active
-          servicePort: 80
+          servicePort: 8000
+      - path: /preview
+        backend:
+          serviceName: rollout-bluegreen-preview
+          servicePort: 8000
