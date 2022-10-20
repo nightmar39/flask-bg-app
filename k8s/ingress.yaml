@@ -11,11 +11,11 @@ spec:
   - host: anthony-bg-demo.sa.cf-cd.com
     http:
       paths:
-      - path: /
+      - path: /flask
         backend:
           serviceName: rollout-bluegreen-active
           servicePort: 8000
-      - path: /preview
+      - path: /flask/preview
         backend:
           serviceName: rollout-bluegreen-preview
           servicePort: 8000
