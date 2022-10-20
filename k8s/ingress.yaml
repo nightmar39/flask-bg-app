@@ -12,10 +12,16 @@ spec:
     http:
       paths:
       - path: /flask
+        pathType: ImplementationSpecific
         backend:
-          serviceName: rollout-bluegreen-active
-          servicePort: 8000
+          service:
+            name: rollout-bluegreen-active
+            port: 
+              number: 8000
       - path: /flask/preview
+        pathType: ImplementationSpecific
         backend:
-          serviceName: rollout-bluegreen-preview
-          servicePort: 8000
+          service:
+            name: rollout-bluegreen-preview
+            port:
+              number: 8000
