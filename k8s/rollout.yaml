@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: flask-simple
-          image: nightmar39/flask-bg-app:7437e80
+          image: nightmar39/flask-bg-app:14ab66f
           ports:
             - name: http
               containerPort: 8000
