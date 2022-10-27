@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/app-root: /
 spec:
   rules:
-  - host: anthony-bg-demo.sa.cf-cd.com
+  - host: rozario-demo.sa.cf-cd.com
     http:
       paths:
       - path: /flask
